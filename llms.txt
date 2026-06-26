@@ -1,0 +1,55 @@
+# Ausztria Radar
+
+> Magyar nyelvű napi hírlevél és gyakorlati tudástár az Ausztriában élő magyaroknak. Napi összefoglaló az osztrák hírekről, szabályokról és támogatásokról, valamint 26 lépésről lépésre útmutató az ausztriai élethez (ügyintézés, egészségügy, pénzügyek, lakhatás, közlekedés, támogatások, munkajog). Készítő: Tamás Kovács (https://tamaskovacs.eu).
+
+## Tudástár — Ausztria Útmutató
+
+26 gyakorlati útmutató 9 témában, magyarul, hivatalos forrásokkal. Teljes oldal: https://ausztriaradar.hu/utmutato.html
+
+Témák:
+- Mindennapi élet (6 útmutató)
+- Ügyintézés (4 útmutató)
+- Pénzügyek (3 útmutató)
+- Támogatás (3 útmutató)
+- Egészségügy (2 útmutató)
+- Közlekedés (2 útmutató)
+- Lakhatás (2 útmutató)
+- Munkajog (2 útmutató)
+- Szülők (2 útmutató)
+
+## Útmutatók listája
+- [ID Austria igénylés lépésről lépésre](https://ausztriaradar.hu/utmutato.html#AU_001) — Ügyintézés
+- [Meldezettel és lakcímbejelentés — az első 3 nap teendői](https://ausztriaradar.hu/utmutato.html#AU_002) — Ügyintézés
+- [E-Card igénylés és a társadalombiztosítási rendszer](https://ausztriaradar.hu/utmutato.html#AU_003) — Egészségügy
+- [Osztrák bankszámlanyitás — melyik bankot válaszd?](https://ausztriaradar.hu/utmutato.html#AU_004) — Pénzügyek
+- [Gyerek iskoláztatása Ausztriában — beiratkozás és rendszer](https://ausztriaradar.hu/utmutato.html#AU_005) — Szülők
+- [FinanzOnline regisztráció és az első adóbevallás](https://ausztriaradar.hu/utmutato.html#AU_006) — Pénzügyek
+- [Anmeldebescheinigung — a letelepedés állandósítása](https://ausztriaradar.hu/utmutato.html#AU_007) — Ügyintézés
+- [Mobilszolgáltatók Ausztriában — hogyan válassz SIM-kártyát?](https://ausztriaradar.hu/utmutato.html#AU_008) — Mindennapi élet
+- [Bevásárlás Ausztriában — boltláncok és spórolási tippek](https://ausztriaradar.hu/utmutato.html#AU_009) — Mindennapi élet
+- [Ingázási támogatások — Pendlerpauschale, Pendlereuro és Jobticket](https://ausztriaradar.hu/utmutato.html#AU_010) — Támogatás
+- [Lakásbérlés Ausztriában — hogyan kerüld el a buktatókat?](https://ausztriaradar.hu/utmutato.html#AU_011) — Lakhatás
+- [ORF-Beitrag (volt GIS) — a kötelező médiadíj, amit minden háztartásnak fizetnie kell](https://ausztriaradar.hu/utmutato.html#AU_012) — Mindennapi élet
+- [Tömegközlekedés Ausztriában — KlimaTicket és helyi bérletek](https://ausztriaradar.hu/utmutato.html#AU_013) — Közlekedés
+- [Lakásvásárlás és jelzáloghitel Ausztriában](https://ausztriaradar.hu/utmutato.html#AU_014) — Lakhatás
+- [Családi támogatások — Familienbeihilfe, Kinderbetreuungsgeld](https://ausztriaradar.hu/utmutato.html#AU_015) — Támogatás
+- [Hasznos appok az ausztriai mindennapokhoz](https://ausztriaradar.hu/utmutato.html#AU_016) — Mindennapi élet
+- [Orvoshoz menni Ausztriában — háziorvos, szakorvos, sürgősségi](https://ausztriaradar.hu/utmutato.html#AU_017) — Egészségügy
+- [Munkajog alapok — felmondási idő, szabadság, kollektív szerződés](https://ausztriaradar.hu/utmutato.html#AU_018) — Munkajog
+- [Autóval Ausztriában — regisztráció, matrica, parkolás](https://ausztriaradar.hu/utmutato.html#AU_019) — Közlekedés
+- [Óvoda és bölcsőde Ausztriában — Kindergarten igénylés](https://ausztriaradar.hu/utmutato.html#AU_020) — Szülők
+- [Erkölcsi bizonyítvány és iratok honosítása](https://ausztriaradar.hu/utmutato.html#AU_021) — Ügyintézés
+- [Internet és Wi-Fi otthon — szolgáltatók és csomagok](https://ausztriaradar.hu/utmutato.html#AU_022) — Mindennapi élet
+- [Klimabonus — 2025-től megszűnt: mit kell tudni a CO2-kompenzációról](https://ausztriaradar.hu/utmutato.html#AU_023) — Támogatás
+- [Álláskeresés Ausztriában — hol és hogyan?](https://ausztriaradar.hu/utmutato.html#AU_024) — Munkajog
+- [Biztosítások Ausztriában — mire van szükséged?](https://ausztriaradar.hu/utmutato.html#AU_025) — Pénzügyek
+- [Posta Ausztriában — csomagátvétel, Postfiliale és a bank99](https://ausztriaradar.hu/utmutato.html#AU_026) — Mindennapi élet
+
+## Teljes tartalom (gépi olvasásra)
+Minden útmutató teljes szövege egy fájlban: https://ausztriaradar.hu/llms-full.txt
+
+## Hírlevél
+Napi ausztriai hírlevél magyarul, 1 hónap ingyen: https://ausztriaradar.hu/
+
+## Fontos
+A tartalmak tájékoztató jellegűek, hivatalos forrásokkal. Kapcsolat: info@ausztriaradar.hu
