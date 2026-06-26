@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# AI / LLM-readable resources (GEO)
+# Overview:     https://ausztriaradar.hu/llms.txt
+# Full content: https://ausztriaradar.hu/llms-full.txt
+
 Sitemap: https://ausztriaradar.hu/sitemap.xml
