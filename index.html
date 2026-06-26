@@ -359,6 +359,19 @@
       .social-bar { position: relative; top: 0; right: 0; justify-content: center; margin-bottom: 12px; }
     }
     @media (max-width: 360px) { .features { grid-template-columns: 1fr; } }
+  
+    /* ─── GUIDE TEASER ─── */
+    .guide-teaser{padding:64px 24px;background:linear-gradient(180deg,var(--cream) 0%,rgba(168,218,220,.20) 100%);text-align:center}
+    .guide-inner{max-width:700px;margin:0 auto}
+    .guide-eyebrow{display:inline-block;background:var(--red);color:#fff;border-radius:100px;padding:6px 16px;font-size:12px;font-weight:700;letter-spacing:.05em;margin-bottom:18px}
+    .guide-teaser h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(28px,4.5vw,42px);color:var(--navy);margin-bottom:14px;line-height:1.08}
+    .guide-teaser h2 em{color:var(--red);font-style:italic}
+    .guide-sub{font-size:17px;color:rgba(29,53,87,.78);margin-bottom:24px;line-height:1.6}
+    .guide-cats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:30px}
+    .guide-cats span{background:#fff;border:1px solid rgba(29,53,87,.12);border-radius:100px;padding:7px 14px;font-size:13.5px;font-weight:600;color:var(--teal-dark)}
+    .guide-btn{display:inline-block;background:var(--navy);color:var(--cream);text-decoration:none;font-weight:700;font-size:16px;padding:14px 30px;border-radius:100px;transition:transform .2s,background .2s;box-shadow:0 4px 16px rgba(29,53,87,.18)}
+    .guide-btn:hover{background:var(--teal-dark);transform:translateY(-2px)}
+    @media(max-width:680px){.guide-teaser{padding:48px 20px}}
   </style>
   <script type="application/ld+json">
 {
@@ -625,6 +638,19 @@
     </div>
   </section>
 
+  <!-- ═══ GUIDE TEASER ═══ -->
+  <section class="guide-teaser">
+    <div class="guide-inner">
+      <span class="guide-eyebrow">ÚJ · TUDÁSTÁR</span>
+      <h2>Nem csak a napi hírek — <em>gyakorlati útmutatók</em> is</h2>
+      <p class="guide-sub">26 lépésről lépésre útmutató az ausztriai élethez: ID Austria, Meldezettel, E-Card, bankszámlanyitás, adóbevallás, lakásbérlés, támogatások és még sok más — magyarul, hivatalos forrásokkal.</p>
+      <div class="guide-cats">
+        <span>📋 Ügyintézés</span><span>🏥 Egészségügy</span><span>💶 Pénzügyek</span><span>🏠 Lakhatás</span><span>🚆 Közlekedés</span><span>🤝 Támogatás</span>
+      </div>
+      <a class="guide-btn" href="./utmutato.html">Böngészd az útmutatókat →</a>
+    </div>
+  </section>
+
   <!-- ═══ CTA ═══ -->
   <section class="cta">
     <h2>Ne maradj le semmiről</h2>
@@ -675,7 +701,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Ausztria Radar · <a href="mailto:info@ausztriaradar.hu">Kapcsolat</a> · <a href="./adatkezeles.html">Adatkezelési tájékoztató</a> · Készült Grazban 🇦🇹</p>
+    <p>© 2026 Ausztria Radar · <a href="./utmutato.html">Útmutató</a> · <a href="mailto:info@ausztriaradar.hu">Kapcsolat</a> · <a href="./adatkezeles.html">Adatkezelési tájékoztató</a> · Készült Grazban 🇦🇹</p>
   </footer>
 
 <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
