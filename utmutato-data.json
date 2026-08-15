@@ -1,0 +1,635 @@
+[
+ {
+  "slug": "id-austria-igenyles",
+  "old_id": "AU_001",
+  "category": "Ügyintézés",
+  "icon": "📋",
+  "title": "ID Austria igénylés lépésről lépésre",
+  "excerpt": "Az ID Austria a korábbi Handy-Signatur utódja, és 2023 decembere óta ez az egyetlen hivatalos digitális aláírási és azonosítási rendszer Ausztriában.",
+  "paragraphs": [
+   "Az ID Austria a korábbi Handy-Signatur utódja, és 2023 decembere óta ez az egyetlen hivatalos digitális aláírási és azonosítási rendszer Ausztriában. Gyakorlatilag minden állami online ügyintézéshez szükséges: adóbevallás a FinanzOnline-on, orvosi receptek kiváltása, hatósági beadványok, és egyre több magánszolgáltatásnál is kérik (pl. banki azonosítás).",
+   "Az aktiválás többféleképpen történhet: személyesen a Magistratnál vagy Finanzamtnál (útlevéllel vagy személyivel + Meldezettel), bankfiókban (George/Erste, Raiffeisen, BAWAG, Bank Austria mind támogatja), vagy a FinanzOnline-on keresztül, ha már van hozzáférésed. Az egész folyamat ingyenes, és az app (Digitales Amt) letölthető iOS-re és Androidra. Az aktiválás általában 10-15 percet vesz igénybe személyesen.",
+   "Az ID Austria EU-szintű eIDAS tanúsítvánnyal rendelkezik, tehát más EU-tagállamok digitális szolgáltatásainál is használható azonosításra. Fontos: a régi Handy-Signatur 2025 végén lejárt, aki nem váltott, annak újra kell aktiválnia. Ha problémád van az aktiválással, az A-Trust ügyfélszolgálata segít (a-trust.at), ők üzemeltetik a háttérrendszert."
+  ],
+  "sources": [
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/id-austria.html"
+   },
+   {
+    "label": "bmi.gv.at",
+    "url": "https://www.bmi.gv.at/"
+   }
+  ],
+  "verified": "2026-02-20"
+ },
+ {
+  "slug": "meldezettel-lakcimbejelentes",
+  "old_id": "AU_002",
+  "category": "Ügyintézés",
+  "icon": "📋",
+  "title": "Meldezettel és lakcímbejelentés — az első 3 nap teendői",
+  "excerpt": "Ausztriába érkezés után 3 munkanapon belül kötelező a lakcímbejelentés (Meldezettel), ami a legtöbb további ügyintézés alapja: bankszámlanyitás, E-Card,",
+  "paragraphs": [
+   "Ausztriába érkezés után 3 munkanapon belül kötelező a lakcímbejelentés (Meldezettel), ami a legtöbb további ügyintézés alapja: bankszámlanyitás, E-Card, adószám — mind erre épül. A formanyomtatvány (Meldezettel) letölthető az oesterreich.gv.at oldalról, ki kell tölteni és a főbérlőnek (Vermieter) is alá kell írnia. Bécsben a Magistratisches Bezirksamt-ban kell leadni, más tartományokban a Gemeindeamt-ban.",
+   "Személyesen kell menni, de időpontfoglalás általában nem szükséges. Szükséges dokumentumok: kitöltött és aláírt Meldezettel, útlevél vagy személyi igazolvány, és a bérleti szerződés (Mietvertrag) is hasznos, bár nem mindig kérik. Az egész folyamat ingyenes és általában 10-15 percet vesz igénybe.",
+   "A bejelentkezési igazolást (Meldebestätigung) a helyszínen megkapod, és ezt fogod használni a bankszámlanyitáshoz és az E-Card igényléshez is. Fontos: a formanyomtatványon van egy rész a vallási hovatartozásról (Religionsbekenntnis). Ha kitöltöd, az egyházi adó automatikusan levonásra kerül a fizetésedből — ez az adóköteles jövedelmed kb.",
+   "1,1%-a. Ha nem akarsz egyházi adót fizetni, hagyd üresen vagy írd be: 'ohne Bekenntnis'. A Hauptwohnsitz (fő lakóhely) bejelentése a fontos, ez kell mindenhez.",
+   "A Nebenwohnsitz (mellék lakóhely) opcionális."
+  ],
+  "sources": [
+   {
+    "label": "wien.gv.at",
+    "url": "https://www.wien.gv.at/amtshelfer/dokumente/verwaltung/meldeservice/anmeldung.html"
+   },
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/themen/dokumente_und_recht/an__abmeldung_des_wohnsitzes.html"
+   }
+  ],
+  "verified": "2026-02-15"
+ },
+ {
+  "slug": "e-card-igenyles",
+  "old_id": "AU_003",
+  "category": "Egészségügy",
+  "icon": "🏥",
+  "title": "E-Card igénylés és a társadalombiztosítási rendszer",
+  "excerpt": "Az E-Card az osztrák társadalombiztosítási kártya, ami gyakorlatilag a magyar TAJ-kártya megfelelője, de fényképes. Munkavállalóként automatikusan jár,",
+  "paragraphs": [
+   "Az E-Card az osztrák társadalombiztosítási kártya, ami gyakorlatilag a magyar TAJ-kártya megfelelője, de fényképes. Munkavállalóként automatikusan jár, amint a munkaadód bejelent az ÖGK-hoz (Österreichische Gesundheitskasse). A bejelentés után 2-4 héttel postán érkezik a címedre, de szükséges hozzá egy szabványos igazolványfotó, amit az ÖGK irodájában kell leadnod, vagy online feltölthetsz a meinsv.at oldalon.",
+   "Az E-Card-ot minden orvosnál és kórházban be kell mutatnod. Nélküle is ellátnak sürgős esetben, de utána pótolnod kell. Családtagok (házastárs, gyerekek) társbiztosítottként (Mitversicherung) szintén jogosultak E-Cardra — ezt külön kell igényelni az ÖGK-nál, de ingyenes.",
+   "A MeinSV alkalmazás (meinsv.at) nagyon hasznos: itt látod az összes egészségügyi adatodat, receptjeidet, és orvosi beutalóidat is kezelheted. Fontos: az E-Card az EU-s egészségbiztosítási kártyát is tartalmazza a hátoldalán (EHIC), tehát EU-n belüli utazáskor is használhatod sürgős ellátásra. Ha nem érkezik meg 4 héten belül, hívd az ÖGK ügyfélszolgálatát, vagy menj be személyesen."
+  ],
+  "sources": [
+   {
+    "label": "gesundheitskasse.at",
+    "url": "https://www.gesundheitskasse.at/"
+   },
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/themen/gesundheit_und_notfaelle/e_card.html"
+   }
+  ],
+  "verified": "2026-02-10"
+ },
+ {
+  "slug": "osztrak-bankszamlanyitas",
+  "old_id": "AU_004",
+  "category": "Pénzügyek",
+  "icon": "💶",
+  "title": "Osztrák bankszámlanyitás — melyik bankot válaszd?",
+  "excerpt": "Ausztriában a bankszámlanyitás az egyik első teendő a Meldezettel után, mert a munkáltató erre utalja a fizetésed. A négy nagy bank: Erste Bank (George",
+  "paragraphs": [
+   "Ausztriában a bankszámlanyitás az egyik első teendő a Meldezettel után, mert a munkáltató erre utalja a fizetésed. A négy nagy bank: Erste Bank (George app), Raiffeisen, BAWAG és Bank Austria (UniCredit). A hagyományos bankok általában negyedévente 15-25 eurót számolnak fel számlavezetési díjként, ami éves szinten 60-100 euró.",
+   "A George (Erste Bank) appja a legnépszerűbb és legmodernebb, de a Raiffeisen ELBA is jó. Olcsóbb alternatívák: N26, Dadat és a bank99 (a Postnál kapható) — ezeknél nincs vagy minimális a havi díj, és online nyithatók. Első körben érdemes egy ingyenes fintech számlával kezdeni (pl.",
+   "N26), amíg a papírjaid rendeződnek. Számlanyitáshoz szükséges: Meldezettel (lakcímigazolás), érvényes útlevél vagy személyi, és adószám (Steuernummer), amit a Finanzamt-tól kapsz. Az osztrák IBAN AT-vel kezdődik, a SEPA utalás EU-n belül általában ingyenes vagy minimális díjú.",
+   "AK-tagként (Arbeiterkammer) egyes bankoknál kedvezményes csomagok érhetők el — érdemes rákérdezni. Tipp a doksiból: az osztrák bankok drágábbak a magyaroknál, de cserébe a szolgáltatás színvonala és a betétvédelem (100.000 EUR/fő) megbízható."
+  ],
+  "sources": [
+   {
+    "label": "arbeiterkammer.at",
+    "url": "https://www.arbeiterkammer.at/"
+   },
+   {
+    "label": "konsument.at",
+    "url": "https://www.konsument.at/"
+   }
+  ],
+  "verified": "2026-02-18"
+ },
+ {
+  "slug": "gyerek-iskolaztatasa",
+  "old_id": "AU_005",
+  "category": "Szülők",
+  "icon": "👶",
+  "title": "Gyerek iskoláztatása Ausztriában — beiratkozás és rendszer",
+  "excerpt": "Ausztriában a tankötelezettség 6 éves kortól kezdődik (Schulpflicht) és 9 évig tart. Az iskolarendszer négy fő szintből áll: Volksschule (általános",
+  "paragraphs": [
+   "Ausztriában a tankötelezettség 6 éves kortól kezdődik (Schulpflicht) és 9 évig tart. Az iskolarendszer négy fő szintből áll: Volksschule (általános iskola, 6-10 év), Mittelschule vagy Gymnasium (középiskola, 10-14 év), majd Oberstufe/BHS/AHS (felső tagozat, 14-18 év). A beiratkozás általában január-februárban történik a következő tanévre.",
+   "Az iskolakörzet (Sprengelprinzip) határozza meg, melyik iskolába jár a gyerek, de szabad iskolaválasztás is lehetséges, ha van hely. Nem német anyanyelvű gyerekeknek nyelvfejlesztő kurzusok (Sprachförderkurse / Deutschförderklassen) érhetők el, ami nagyon hasznos a beilleszkedéshez. Ezek ingyenesek és az iskolán belül szervezik.",
+   "A tankönyvek Ausztriában ingyenesek a Schulbuchaktion keretében — ez egy állami program, ami minden tanulónak biztosítja a tananyagot. A napközi (Nachmittagsbetreuung / Hort) külön igénylendő és általában havi 100-200 euró közötti díjba kerül, tartománytól függően. Bécsben a MA 10 (Wiener Kindergärten) kezeli az igénylést.",
+   "Iskolaérettségi vizsgálat (Schulreife) szükséges lehet, ha a gyerek fejlődéséről kétség merül fel. Ezt az iskola kezdeményezi, és nem a szülőnek kell kérnie. Tipp: a legtöbb iskolában van szülői egyesület (Elternverein), érdemes csatlakozni, mert segít a beilleszkedésben és naprakész infókat kapsz."
+  ],
+  "sources": [
+   {
+    "label": "bmbwf.gv.at",
+    "url": "https://www.bmbwf.gv.at/"
+   },
+   {
+    "label": "wien.gv.at",
+    "url": "https://www.wien.gv.at/bildung/schulen/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "finanzonline-adobevallas",
+  "old_id": "AU_006",
+  "category": "Pénzügyek",
+  "icon": "💶",
+  "title": "FinanzOnline regisztráció és az első adóbevallás",
+  "excerpt": "A FinanzOnline az osztrák adóhatóság (Finanzamt) online felülete, ahol az adóbevallást, adó-visszaigénylést és minden pénzügyi ügyintézést elintézhetsz.",
+  "paragraphs": [
+   "A FinanzOnline az osztrák adóhatóság (Finanzamt) online felülete, ahol az adóbevallást, adó-visszaigénylést és minden pénzügyi ügyintézést elintézhetsz. Regisztrálni a Sozialversicherungsnummer (SV-szám) megszerzése után tudsz — levélben kapsz egy aktiváló kódot a címedre. Az első adóbevallás (Arbeitnehmerveranlagung) Ausztriában nem kötelező munkavállalóknak, de nagyon megéri megcsinálni, mert átlagosan 500-1000 eurót lehet visszakapni évente.",
+   "Az osztrák rendszerben sok minden leírható: ingázási költségek, szakmai továbbképzés, munkához szükséges eszközök, és bizonyos biztosítások is. Az első pár évben érdemes könyvelővel (Steuerberater) csináltatni, mert sok olyan tételt ismernek, amikre magadtól nem gondolnál. Egy jó könyvelő 150-300 eurót kér egy adóbevallásért, de a visszaigénylés többszöröse ennek.",
+   "A FinanzOnline-ra az ID Austria-val is be tudsz lépni, ami kényelmesebb, mint a régi jelszavas módszer. Az adóbevallást 5 évre visszamenőleg is beadhatod, szóval ha az első évben kimaradt, nem késő pótolni."
+  ],
+  "sources": [
+   {
+    "label": "finanzonline.bmf.gv.at",
+    "url": "https://finanzonline.bmf.gv.at/"
+   },
+   {
+    "label": "bmf.gv.at",
+    "url": "https://www.bmf.gv.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "anmeldebescheinigung",
+  "old_id": "AU_007",
+  "category": "Ügyintézés",
+  "icon": "📋",
+  "title": "Anmeldebescheinigung — a letelepedés állandósítása",
+  "excerpt": "Az Anmeldebescheinigung az EU/EGT állampolgárok tartózkodási igazolása Ausztriában, amit az első Meldezettel leadásától számított 4 hónapon belül kell",
+  "paragraphs": [
+   "Az Anmeldebescheinigung az EU/EGT állampolgárok tartózkodási igazolása Ausztriában, amit az első Meldezettel leadásától számított 4 hónapon belül kell igényelni. Ez nem vízum, hanem az EU szabad mozgás jogán alapuló nyilvántartásba vétel. A kérelmet a lakóhelyed szerinti Magistrat-nál (MA 35 Bécsben) vagy BH-nál (Bezirkshauptmannschaft vidéken) kell benyújtanod.",
+   "Szükséges dokumentumok: útlevél vagy személyi, Meldezettel, munkaszerződés vagy jövedelemigazolás, és egészségbiztosítás igazolása (E-Card elég). A díja tartományonként változik, de általában 15-55 euró. Bécsben online is kérhető az MA 35-nél.",
+   "Fontos: ez nem határidős igazolvány, hanem határozatlan időre szól. Ha 5 évet folyamatosan Ausztriában töltöttél, kérhetsz Daueraufenthaltskarte-t (állandó tartózkodási kártyát), ami még erősebb jogalapot ad. Ha a 4 hónapos határidőt elmulasztod, pénzbírságot kaphatol (50-250 euró), de utólag is benyújtható."
+  ],
+  "sources": [
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/themen/leben_in_oesterreich/aufenthalt/2/Seite.120810.html"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "mobilszolgaltatok-sim-kartya",
+  "old_id": "AU_008",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "Mobilszolgáltatók Ausztriában — hogyan válassz SIM-kártyát?",
+  "excerpt": "Ausztriában három saját hálózatot üzemeltető nagy szolgáltató van: A1 (az egykori állami cég, a legnagyobb lefedettséggel), Magenta (korábban T-Mobile, a",
+  "paragraphs": [
+   "Ausztriában három saját hálózatot üzemeltető nagy szolgáltató van: A1 (az egykori állami cég, a legnagyobb lefedettséggel), Magenta (korábban T-Mobile, a Deutsche Telekom leánya) és Drei (Hutchison). Rajtuk fut számos olcsóbb virtuális szolgáltató (MVNO), amelyek ugyanezt a hálózatot használják, de jóval olcsóbban: HoT (a Hofer saját márkája, az A1 hálózatán — SIM-je a Hofer pénztáraknál is kapható), spusu (független osztrák MVNO, átlátható csomagokkal), yesss! és bob (mindkettő A1 hálózat), valamint educom.",
+   "Két csomagtípus létezik: Wertkarte (feltöltőkártya — nincs hűségidő, bárhol kapható: Hofer, Penny, Trafik) és Vertrag (előfizetés, általában 12–24 hónap hűségidővel; a spusu és a HoT hűségidő nélkül is kínál csomagokat). Fontos: Ausztriában 2023 óta minden SIM-kártya regisztrációköteles — feltöltőkártyánál is fel kell mutatni egy érvényes személyazonosító okmányt az aktiváláshoz. Az EU-roaming a szabályozás szerint felár nélkül jár, de a korlátlan csomagoknál van fair-use (FUP) roaminglimit.",
+   "Induláshoz a legjobb egy Wertkarte vagy egy MVNO-csomag, amíg a papírok (lakcím, bankszámla) rendeződnek. Az aktuális díjakat mindig a szolgáltató oldalán ellenőrizd, mert a tarifák gyakran változnak — a tarife.at összehasonlító oldal is segít."
+  ],
+  "sources": [
+   {
+    "label": "rtr.at",
+    "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/spectrumallocation.de.html"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "bevasarlas-boltlancok",
+  "old_id": "AU_009",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "Bevásárlás Ausztriában — boltláncok és spórolási tippek",
+  "excerpt": "Az osztrák szupermarketpiac koncentrált: a Spar, a Billa (és Billa Plus, korábban Merkur), a Hofer (Magyarországon Aldi néven ismert), a Lidl és a Penny a",
+  "paragraphs": [
+   "Az osztrák szupermarketpiac koncentrált: a Spar, a Billa (és Billa Plus, korábban Merkur), a Hofer (Magyarországon Aldi néven ismert), a Lidl és a Penny a fő szereplők. Árkategóriák: a Hofer és a Lidl a legolcsóbbak, a Penny szintén budget, a Billa a középmezőny, a Spar és a Billa Plus a drágábbak, de jobb saját márkákkal. A Hofer népszerű a bio vonaláról (Zurück zum Ursprung).",
+   "Hűségprogramok és appok (érdemes feltelepíteni őket): a jö Bonus Club a REWE-csoport közös programja, amelyet a BILLA, BILLA Plus, PENNY és a BIPA drogéria fogad el — digitális kuponok, pontgyűjtés és appos szórólap-akciók járnak vele. A SPAR/INTERSPAR saját programja a Friends of Spar. A Hofernek a Hofer-app, a Lidlnek a Lidl Plus adja a kuponokat és a heti akciókat.",
+   "Ezek mellett a Too Good To Go appban a megmaradó ételeket veheted meg 70–80% kedvezménnyel pékségektől és éttermektől, a Foodpoint.at pedig szavatossági idő közeli vagy szépséghibás termékeket árul töredékáron. Az osztrák boltok vasárnap és ünnepnapokon zárva tartanak (Ladenschlussgesetz) — kivétel a pályaudvari üzletek és a benzinkutak; szombaton általában 18:00-ig nyitva."
+  ],
+  "sources": [
+   {
+    "label": "konsument.at",
+    "url": "https://www.konsument.at/"
+   },
+   {
+    "label": "arbeiterkammer.at",
+    "url": "https://www.arbeiterkammer.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "pendlerpauschale-ingazasi-tamogatas",
+  "old_id": "AU_010",
+  "category": "Támogatás",
+  "icon": "🤝",
+  "title": "Ingázási támogatások — Pendlerpauschale, Pendlereuro és Jobticket",
+  "excerpt": "Ausztriában három fő ingázási támogatási forma létezik, és fontos tudni, hogy ezek részben kizárják egymást. A Pendlerpauschale egy adókedvezmény, ami a",
+  "paragraphs": [
+   "Ausztriában három fő ingázási támogatási forma létezik, és fontos tudni, hogy ezek részben kizárják egymást. A Pendlerpauschale egy adókedvezmény, ami a munkahely és a lakóhely közötti távolság alapján csökkenti az adóalapot — kis Pendlerpauschale (20 km-től, ha van tömegközlekedés) és nagy Pendlerpauschale (2 km-től, ha nincs ésszerű tömegközlekedés). A Pendlereuro egy fix évi euró/km támogatás, ami a Pendlerpauschale-val együtt igényelhető — tehát ez plusz.",
+   "A Jobticket a munkáltató által adott tömegközlekedési bérlet, ami adómentes juttatás. Ha Jobticket-ed van, NEM igényelheted a Pendlerpauschale-t is, tehát vagy-vagy. Ha mondjuk lakást váltasz és messzebb kerülsz a munkahelyedtől, előbb le kell mondanod a Jobticket-et, és utána igényelheted az ingázási támogatást.",
+   "A BMF Pendlerrechner (pendlerrechner.bmf.gv.at) kiszámolja, melyik támogatásra vagy jogosult. Ezt érdemes megnézni mielőtt döntesz Jobticket vagy Pendlerpauschale között. Az igénylés a munkáltatón keresztül történik (L34-es formanyomtatvány), vagy az éves adóbevallásban is érvényesítheted."
+  ],
+  "sources": [
+   {
+    "label": "bmf.gv.at",
+    "url": "https://www.bmf.gv.at/themen/steuern/arbeitnehmerinnenveranlagung/pendlerpauschale.html"
+   },
+   {
+    "label": "pendlerrechner.bmf.gv.at",
+    "url": "https://pendlerrechner.bmf.gv.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "lakasberles",
+  "old_id": "AU_011",
+  "category": "Lakhatás",
+  "icon": "🏠",
+  "title": "Lakásbérlés Ausztriában — hogyan kerüld el a buktatókat?",
+  "excerpt": "Az osztrák lakáspiacon minden albérlethez szinte mindig közvetítő (Makler) tartozik, és a közvetítői díj igen magas: jellemzően 2 havi bérleti díj + ÁFA.",
+  "paragraphs": [
+   "Az osztrák lakáspiacon minden albérlethez szinte mindig közvetítő (Makler) tartozik, és a közvetítői díj igen magas: jellemzően 2 havi bérleti díj + ÁFA. Ez könnyen 1000-2000 euró is lehet. Ezért érdemes provisionsfrei (közvetítőmentes) lakásokat keresni — a Willhaben.at-on és a Facebook csoportokban is szűrhetsz erre.",
+   "A kaució (Kaution) általában 3 havi bérleti díj, amit visszakapsz a kiköltözéskor, ha a lakás rendben van. A bérleti szerződés (Mietvertrag) lehet határozatlan (unbefristet) vagy határozott idejű (befristet) — az unbefristet sokkal jobb a bérlőnek, mert nehezebb felmondani. A bérleti díj (Miete) általában három részből áll: Nettomiete (alap bérleti díj) + Betriebskosten (üzemeltetési költségek: víz, szemét, lépcsőháztakarítás stb.) + ÁFA.",
+   "A fűtés és áram általában külön fizetendő. Ha Bécsben keresel lakást, a régi építésű (Altbau) lakásoknál a Richtwertmiete szabályozza a maximális bérleti díjat — ez tartományonként eltérő, és 2026-ban Bécsben kb. 6,67 EUR/m².",
+   "Az Arbeiterkammer ingyenes jogi tanácsadást biztosít bérleti vitákban — érdemes velük egyeztetni a szerződés aláírása előtt."
+  ],
+  "sources": [
+   {
+    "label": "arbeiterkammer.at",
+    "url": "https://www.arbeiterkammer.at/beratung/konsumentenschutz/wohnen/"
+   },
+   {
+    "label": "willhaben.at",
+    "url": "https://www.willhaben.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "orf-beitrag-mediadij",
+  "old_id": "AU_012",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "ORF-Beitrag (volt GIS) — a kötelező médiadíj, amit minden háztartásnak fizetnie kell",
+  "excerpt": "2024. január 1-je óta a korábbi GIS-díjat az ORF-Haushaltsabgabe (ORF-Beitrag) váltotta fel, amelyet az OBS (a GIS utódszervezete) szed be. Az alapösszeg",
+  "paragraphs": [
+   "2024. január 1-je óta a korábbi GIS-díjat az ORF-Haushaltsabgabe (ORF-Beitrag) váltotta fel, amelyet az OBS (a GIS utódszervezete) szed be. Az alapösszeg országosan egységes 15,30 euró/hó (183,60 euró/év), törvényben rögzítve és 2029 végéig befagyasztva.",
+   "A korábbi GIS-szel ellentétben MINDEN háztartásnak fizetnie kell, függetlenül attól, van-e tévé vagy rádió — a streamingre hivatkozás többé nem mentesít, és nincsenek ellenőrök sem. A díj a Hauptwohnsitz (állandó lakcím) szerint jár, lakcímenként egy nagykorú személyt terhel; a Nebenwohnsitz (másodlagos lakcím) 2024 óta nem díjköteles. Egyes tartományokban a 15,30 euróra Landesabgabe (tartományi pótdíj) is rakódik, 0,00 és 4,70 euró/hó között.",
+   "Stájerországban a legmagasabb, 4,70 euró, így egy grazi háztartás ténylegesen 20,00 euró/hó-t fizet — ez a legtöbb az országban. Jó hír a stájereknek: a tartomány 2027-től eltörli ezt a pótdíjat, onnantól ott is csak 15,30 euró marad. Bécs, Felső- és Alsó-Ausztria, Vorarlberg és Salzburg nem szed pótdíjat (15,30 euró), Burgenland és Karintia +4,60 euró (19,90), Tirol +3,10 euró (18,40).",
+   "Fizetés: SEPA-Lastschrift (évi 6 vagy 2 részletre osztva) vagy éves Zahlschein/Erlagschein. Mentesség (Befreiung) szociális vagy egészségügyi rászorultság alapján igényelhető — például Ausgleichszulage-jogosultaknak; aki a GIS alól mentes volt, az az ORF-Beitrag alól is az marad. A regisztráció vagy a fizetés elmulasztása mentesség nélkül egy teljes éves díjnak megfelelő bírságot vonhat maga után.",
+   "Hivatalos információ és ügyintézés: obs.at."
+  ],
+  "sources": [
+   {
+    "label": "obs.at",
+    "url": "https://www.obs.at/"
+   },
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "klimaticket-tomegkozlekedes",
+  "old_id": "AU_013",
+  "category": "Közlekedés",
+  "icon": "🚆",
+  "title": "Tömegközlekedés Ausztriában — KlimaTicket és helyi bérletek",
+  "excerpt": "Az osztrák tömegközlekedés kiváló és egyre olcsóbb a KlimaTicket bevezetése óta. A KlimaTicket Ö (egész Ausztria) évi 1095 euró (havi 91,25 EUR), és ezzel",
+  "paragraphs": [
+   "Az osztrák tömegközlekedés kiváló és egyre olcsóbb a KlimaTicket bevezetése óta. A KlimaTicket Ö (egész Ausztria) évi 1095 euró (havi 91,25 EUR), és ezzel az összes helyi, regionális és távolsági tömegközlekedést korlátlanul használhatod — busz, villamos, metró, S-Bahn és ÖBB vonatok (2. osztály).",
+   "Regionális KlimaTicket-ek is léteznek: tartományi vagy tartomány + szomszéd kombókban, olcsóbban. Bécsben a Wiener Linien éves bérlet 365 euró (napi 1 euró), ami az egyik legjobb ár-érték arány Európában. Az ÖBB (osztrák vasút) appja kiváló: valós idejű menetrend, jegyvásárlás és Vorteilscard kedvezmények.",
+   "A Vorteilscard Classic évi 66 euró, és 50% kedvezményt ad minden ÖBB jegyre. A Wiener Linien appban is lehet jegyet venni, és van heti (17,10 EUR) és havi (51,50 EUR) bérlet is. Fontos: a KlimaTicket és a Jobticket (munkáltatói támogatás) kombinálható, de a Pendlerpauschale-val nem.",
+   "Szóval ha KlimaTicket-ed van Jobticket-tel, a Pendlerpauschale nem igényelhető."
+  ],
+  "sources": [
+   {
+    "label": "klimaticket.at",
+    "url": "https://www.klimaticket.at/"
+   },
+   {
+    "label": "wienerlinien.at",
+    "url": "https://www.wienerlinien.at/"
+   },
+   {
+    "label": "oebb.at",
+    "url": "https://www.oebb.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "lakasvasarlas-jelzaloghitel",
+  "old_id": "AU_014",
+  "category": "Lakhatás",
+  "icon": "🏠",
+  "title": "Lakásvásárlás és jelzáloghitel Ausztriában",
+  "excerpt": "Ausztriában a lakásvásárlás hitelezési feltételei szigorúbbak, mint Magyarországon. A 2022-es KIM-rendelet",
+  "paragraphs": [
+   "Ausztriában a lakásvásárlás hitelezési feltételei szigorúbbak, mint Magyarországon. A 2022-es KIM-rendelet (Kreditinstitute-Immobilienfinanzierungsmaßnahmen-Verordnung) óta a bankok megkövetelik, hogy a vevő a vételár legalább 20%-át önerőként hozza, a havi törlesztő ne haladja meg a nettó jövedelem 40%-át, és a futamidő maximum 35 év legyen. Különleges esetekben (pl.",
+   "két kereső, jó jövedelemmel rendelkező szakma) az önerő lemehet 10%-ra is, de ez ritka. A személyes hitelbírálati beszélgetésen (Bankgespräch) érdemes felkészülten érkezni: készíts egy családi mérleget (Haushaltsrechnung) ahol a bevételeket és kiadásokat felfelé kerekítve mutatod be. A közvetítői díj (Maklerprovision) lakásvásárlásnál a vételár 3%-a + ÁFA, ami egy 300.000 eurós lakásnál 10.800 euró.",
+   "Ehhez jön a Grunderwerbsteuer (ingatlanszerzési illeték, 3,5%), a Grundbucheintragung (telekkönyvi bejegyzés, 1,1%) és az ügyvédi díj (1-2%). Összességében a vételáron felül 8-10% járulékos költséggel kell számolnod. Az osztrák ingatlanpiacon a lakásárak az elmúlt évtizedben jelentősen emelkedtek, különösen Bécsben és Grazban, de 2023-2024-ben stagnálás vagy enyhe csökkenés volt tapasztalható a magas kamatok miatt."
+  ],
+  "sources": [
+   {
+    "label": "arbeiterkammer.at",
+    "url": "https://www.arbeiterkammer.at/beratung/konsumentenschutz/wohnen/"
+   },
+   {
+    "label": "fma.gv.at",
+    "url": "https://www.fma.gv.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "familienbeihilfe-csaladi-tamogatas",
+  "old_id": "AU_015",
+  "category": "Támogatás",
+  "icon": "🤝",
+  "title": "Családi támogatások — Familienbeihilfe, Kinderbetreuungsgeld",
+  "excerpt": "Ausztriában a családtámogatási rendszer az egyik legbőkezűbb Európában. A Familienbeihilfe (családi pótlék) életkortól függően havi 120-174 euró",
+  "paragraphs": [
+   "Ausztriában a családtámogatási rendszer az egyik legbőkezűbb Európában. A Familienbeihilfe (családi pótlék) életkortól függően havi 120-174 euró gyermekenként, és automatikusan jár minden Ausztriában élő szülőnek, akinek gyereke van. Többgyermekes családoknak pótlék (Geschwisterstaffelung) is jár.",
+   "A Kinderbetreuungsgeld (gyermekgondozási díj) a szülési szabadság utáni támogatás, aminek több modellje van: fix összegű (hosszabb, de kevesebb/hó) vagy jövedelemfüggő (rövidebb, de a fizetés 80%-a). A jövedelemfüggő modell max. 12+2 hónapig jár (ha mindkét szülő veszi ki).",
+   "A Familienbonus Plus egy adókedvezmény, ami évi max. 2000 eurót jelent 18 év alatti gyerekenként — ez nem készpénz, hanem adócsökkentés, tehát a munkáltató az L1-es nyomtatvánnyal automatikusan érvényesítheti. A Wochengeld (terhességi-gyermekágyi segély) a szülés előtti 8 és utáni 8 hétben jár, a teljes fizetés összegében.",
+   "Az igénylés a Finanzamt-nál (Familienbeihilfe) és az ÖGK-nál (Kinderbetreuungsgeld) történik, részben online is a FinanzOnline-on keresztül."
+  ],
+  "sources": [
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/themen/familie_und_partnerschaft/geburt/3/Seite.080714.html"
+   },
+   {
+    "label": "bmf.gv.at",
+    "url": "https://www.bmf.gv.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "hasznos-appok",
+  "old_id": "AU_016",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "Hasznos appok az ausztriai mindennapokhoz",
+  "excerpt": "Ausztriában számos app megkönnyíti a mindennapokat — néhányat csak osztrák App Store / Google Play országbeállítással tudsz letölteni. Ügyintézés:",
+  "paragraphs": [
+   "Ausztriában számos app megkönnyíti a mindennapokat — néhányat csak osztrák App Store / Google Play országbeállítással tudsz letölteni. Ügyintézés: Digitales Amt (ID Austria, hivatalos ügyek — lásd az ID Austria sztorit), FinanzOnline-app (adóügyek — lásd az adóbevallás sztorit). Egészségügy: a MeinÖGK / Gesundheitskasse-app és a MeinSV (meinsv.at) segítségével kezelheted az E-Card-adataidat, a recepteket és a beutalókat (lásd az E-Card sztorit).",
+   "Közlekedés: Wiener Linien és WienMobil (bécsi tömegközlekedés és mobilitás egy helyen), ÖBB (vonatmenetrend és jegyek), Handyparken (parkolás mobilról több városban), valamint Uber (Bécs, Graz) és Bolt egyes városokban. Pénzspórolás: Too Good To Go (megmaradó ételek 70–80% kedvezménnyel), jö (REWE-csoport bónuszprogramja: BILLA, PENNY, BIPA), Refurbed (felújított elektronika, osztrák cég). Sport és szabadidő: MyClubs (havi díjért több száz sportlétesítmény, ClassPass jellegű) és Bergfex (túra- és síútvonalak)."
+  ],
+  "sources": [
+   {
+    "label": "digitalaustria.gv.at",
+    "url": "https://www.digitalaustria.gv.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "orvoshoz-menni",
+  "old_id": "AU_017",
+  "category": "Egészségügy",
+  "icon": "🏥",
+  "title": "Orvoshoz menni Ausztriában — háziorvos, szakorvos, sürgősségi",
+  "excerpt": "Ausztriában az egészségügyi rendszer az E-Card-ra épül. Háziorvost (Allgemeinmediziner) kell választanod — lehetőleg olyat, aki szerződésben áll az",
+  "paragraphs": [
+   "Ausztriában az egészségügyi rendszer az E-Card-ra épül. Háziorvost (Allgemeinmediziner) kell választanod — lehetőleg olyat, aki szerződésben áll az ÖGK-val (Kassenarzt), mert náluk az ellátás ingyenes az E-Card-dal. A Wahlarzt (magánorvos) drágább, de az ÖGK a díj 80%-át visszatéríti.",
+   "Szakorvoshoz (Facharzt) általában beutaló (Überweisung) kell a háziorvostól, de ez nem minden szakterületnél kötelező. A várakozási idő kasszaorvosnál hosszabb lehet (hetektől hónapokig), Wahlarzt-nál jellemzően gyorsabb. Sürgős esetben a mentőszolgálat száma a 144, az általános segélyhívó a 112.",
+   "A kórházi sürgősségi osztályra (Notaufnahme) beutaló nélkül is mehetsz, de a nem sürgős eseteket hosszú várakozással büntetik. Gyógyszereket patikában (Apotheke) kapod receptre, és az E-Card-dal a receptdíj (Rezeptgebühr) fix 7,10 euró/gyógyszer (2026-os érték). A receptek már elektronikusan is működnek a MeinSV appon keresztül.",
+   "Bécsben éjjel-nappali ügyelet: az ÄrztefonWien (1450-es szám) triage-rendszert üzemeltet, ami irányít a megfelelő ellátáshoz."
+  ],
+  "sources": [
+   {
+    "label": "gesundheitskasse.at",
+    "url": "https://www.gesundheitskasse.at/"
+   },
+   {
+    "label": "aerztekammer.at",
+    "url": "https://www.aerztekammer.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "munkajog-alapok",
+  "old_id": "AU_018",
+  "category": "Munkajog",
+  "icon": "💼",
+  "title": "Munkajog alapok — felmondási idő, szabadság, kollektív szerződés",
+  "excerpt": "Az osztrák munkajog erősen szabályozott és a munkavállalók számára kedvező, különösen a kollektív szerződések (Kollektivvertrag, KV) rendszere miatt.",
+  "paragraphs": [
+   "Az osztrák munkajog erősen szabályozott és a munkavállalók számára kedvező, különösen a kollektív szerződések (Kollektivvertrag, KV) rendszere miatt. Szinte minden iparágnak van KV-ja, ami a minimálbért, pótlékokat és egyéb feltételeket szabályozza — a magyar minimálbérnél jóval magasabb szinteken. A törvényes éves szabadság 5 hét (25 munkanap), és 25 szolgálati év után 6 hétre nő.",
+   "Ehhez jönnek az osztrák ünnepnapok (13 nap évente). Felmondási idő munkáltatói oldalról: az első 2 évben 6 hét, utána fokozatosan nő (25+ év után 5 hónap). Munkavállalói felmondás általában 1 hónap.",
+   "A próbaidő (Probezeit) maximum 1 hónap. A 13. és 14.",
+   "havi fizetés (Weihnachtsgeld és Urlaubsgeld) szinte minden KV-ban benne van — ez gyakorlatilag két extra havi fizetés évente, kedvezményes adózással (fix 6%). Az Arbeiterkammer (AK) ingyenes jogi tanácsadást ad munkajogi kérdésekben — használd ki, különösen felmondás, túlóra-viták vagy munkaszerződési problémák esetén."
+  ],
+  "sources": [
+   {
+    "label": "arbeiterkammer.at",
+    "url": "https://www.arbeiterkammer.at/beratung/arbeitundrecht/"
+   },
+   {
+    "label": "wko.at",
+    "url": "https://www.wko.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "autoval-ausztriaban",
+  "old_id": "AU_019",
+  "category": "Közlekedés",
+  "icon": "🚆",
+  "title": "Autóval Ausztriában — regisztráció, matrica, parkolás",
+  "excerpt": "Ha Magyarországról hozod az autódat, az átregisztrálás (Ummeldung) kötelező, ha állandó lakhelyed van Ausztriában. A folyamat: Pickerl (műszaki vizsga az",
+  "paragraphs": [
+   "Ha Magyarországról hozod az autódat, az átregisztrálás (Ummeldung) kötelező, ha állandó lakhelyed van Ausztriában. A folyamat: Pickerl (műszaki vizsga az ÖAMTC-nél vagy ARBÖ-nél), biztosítás kötése osztrák biztosítónál, és a regisztráció a Zulassungsstelle-nél. Az egész kb.",
+   "300-500 euró és 1-2 hét. Az autópálya-matrica (Vignette) kötelező az ASFINAG autópályáin. Éves matrica 2026-ban kb.",
+   "96,40 euró, de van 10 napos (9,90 EUR) és 2 hónapos (29,00 EUR) is. Digitális Vignette is vásárolható az asfinag.at-on. Parkolás: Bécsben az egész város fizetős parkolási zóna (Kurzparkzone), hétköznap 9-22 óráig.",
+   "A Handyparken app-pal mobilról fizethetsz. Éves parkolási engedély (Parkpickerl) a saját kerületedben kb. 120 euró/év.",
+   "Tipp: az ÖAMTC és az ARBÖ az osztrák autósklub-ok (mint az ADAC Németországban). Éves tagság kb. 70-130 euró, de cserébe ingyen autómentő, jogi segítség és sok kedvezmény jár."
+  ],
+  "sources": [
+   {
+    "label": "oeamtc.at",
+    "url": "https://www.oeamtc.at/"
+   },
+   {
+    "label": "asfinag.at",
+    "url": "https://www.asfinag.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "ovoda-bolcsode-kindergarten",
+  "old_id": "AU_020",
+  "category": "Szülők",
+  "icon": "👶",
+  "title": "Óvoda és bölcsőde Ausztriában — Kindergarten igénylés",
+  "excerpt": "Ausztriában az óvoda (Kindergarten) 3 éves kortól, a bölcsőde (Kinderkrippe) pedig 0-3 éves korig elérhető. Bécsben az utolsó kötelező óvodai év (5 éves",
+  "paragraphs": [
+   "Ausztriában az óvoda (Kindergarten) 3 éves kortól, a bölcsőde (Kinderkrippe) pedig 0-3 éves korig elérhető. Bécsben az utolsó kötelező óvodai év (5 éves kortól) ingyenes, és a bécsi városi óvodák 0-6 éves korig is ingyenesek (ebéd kivételével). Más tartományokban a díjak eltérőek: Stájerországban pl.",
+   "az utolsó 2 év ingyenes, de a korábbi évekért havi 100-300 eurót kérhetnek. Vidéken a Gemeinde (önkormányzat) saját bölcsődéi és óvodái vannak, ezekre helyben kell jelentkezni. Az igénylés Bécsben online történik a wien.gv.at-on, a MA 10 (Wiener Kindergärten) kezelésében.",
+   "A népszerű helyekre érdemes minél hamarabb (szeptemberi kezdéshez január-februárban) jelentkezni. Privát óvodák és bölcsődék is vannak, ezeknél a díj havi 300-800 euró, de sok munkaadó támogatja a Kinderbetreuungskostenzuschuss keretében (évi max. 2000 euró adómentes).",
+   "Tipp: a Tagesmutter/Tagesvater (napközbeni gyermekfelügyelet) is elismert és támogatott forma, különösen vidéken."
+  ],
+  "sources": [
+   {
+    "label": "wien.gv.at",
+    "url": "https://www.wien.gv.at/bildung/kindergarten/"
+   },
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "erkolcsi-bizonyitvany",
+  "old_id": "AU_021",
+  "category": "Ügyintézés",
+  "icon": "📋",
+  "title": "Erkölcsi bizonyítvány és iratok honosítása",
+  "excerpt": "Osztrák munkáltatók egyre gyakrabban kérik a Strafregisterbescheinigung-ot (erkölcsi bizonyítvány). A magyar erkölcsi bizonyítványt a Kormányablakban",
+  "paragraphs": [
+   "Osztrák munkáltatók egyre gyakrabban kérik a Strafregisterbescheinigung-ot (erkölcsi bizonyítvány). A magyar erkölcsi bizonyítványt a Kormányablakban lehet igényelni, és ha a munkáltató osztrák verziót kér, szükség lehet hivatalos fordításra (beglaubigte Übersetzung) egy bíróságilag hitelesített tolmács által. Az egyéb iratok (diploma, bizonyítványok) honosítására a Nostrifizierung vagy Anerkennung szolgál.",
+   "EU-s diplomák általában automatikusan elfogadottak, de egyes szakmáknál (orvos, tanár, mérnök) külön eljárás kell. A fordításokat angol nyelven is elfogadják sok helyen, de az osztrák hatóságok a német nyelvű fordítást preferálják. Bíróságilag hitelesített tolmácsot a sdgliste.justiz.gv.at oldalon találsz.",
+   "Az apostille (Apostil) pecsét nemzetközi iratoknál szükséges lehet — magyar iratoknál ezt a Közigazgatási és Igazságügyi Minisztérium vagy a területileg illetékes törvényszék állítja ki. Tipp: készíts előre több hitelesített másolatot a legfontosabb irataidról, mert Ausztriában gyakran kérnek eredetit vagy hitelesített másolatot."
+  ],
+  "sources": [
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/"
+   },
+   {
+    "label": "kormanyablak.hu",
+    "url": "https://kormanyablak.hu/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "internet-otthon",
+  "old_id": "AU_022",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "Internet és Wi-Fi otthon — szolgáltatók és csomagok",
+  "excerpt": "Az osztrák otthoni internetpiacon a fő szolgáltatók: A1 (a legnagyobb, réz- és optikai hálózat), Magenta (kábel, korábban UPC), Drei (fix wireless, 5G",
+  "paragraphs": [
+   "Az osztrák otthoni internetpiacon a fő szolgáltatók: A1 (a legnagyobb, réz- és optikai hálózat), Magenta (kábel, korábban UPC), Drei (fix wireless, 5G Home), valamint regionális üvegszálas szolgáltatók (pl. Fonira). Három technológia közül választhatsz, és más-más helyzetben éri meg: a kábel (jellemzően Magenta) városban a legstabilabb, nagy sebességgel; a DSL vagy Glasfaser (főleg A1) ott jó, ahol kiépített; a mobil-otthoni net (Drei vagy A1, routerrel, telepítés nélkül) pedig ott alternatíva, ahol nincs kábel vagy optika.",
+   "A havidíjak nagyjából 25–50 euró nagyságrendben mozognak a sebességtől függően, de a pontos árat és a lefedettséget az új címre mindig külön ellenőrizd (tarife.at, illetve a szolgáltató címkeresője). Figyelj a szerződéskötés három tételére: a hűségidő (Bindung, általában 12–24 hónap), az aktiválási díj, és a router (bérlet vagy egyszeri díj). A Drei Home és néhány regionális szolgáltató hűségidő nélkül is kínál csomagot.",
+   "A sebességet a netztest.at-on tesztelheted, a szabályozó hatóság az RTR. Tipp: költözésnél (Übersiedlung) körülbelül 4 héttel korábban jelezd a szolgáltatónak."
+  ],
+  "sources": [
+   {
+    "label": "rtr.at",
+    "url": "https://www.rtr.at/"
+   },
+   {
+    "label": "tarife.at",
+    "url": "https://www.tarife.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "klimabonus",
+  "old_id": "AU_023",
+  "category": "Támogatás",
+  "icon": "🤝",
+  "title": "Klimabonus — 2025-től megszűnt: mit kell tudni a CO2-kompenzációról",
+  "excerpt": "Fontos változás: a Klimabonust 2025-től megszüntették — nincs több éves kifizetés. A támogatás eredetileg a CO2-árazás (szén-dioxid-adó) kompenzációjára",
+  "paragraphs": [
+   "Fontos változás: a Klimabonust 2025-től megszüntették — nincs több éves kifizetés. A támogatás eredetileg a CO2-árazás (szén-dioxid-adó) kompenzációjára szolgált, és 2022–2024 között járt évente, lakóhely szerint sávozva (145–290 euró/fő, gyerekeknek a fele). A 2025/2026-os kettős költségvetés keretében, költségvetési megszorításként a Klimabonus-törvény módosításával 2024-gyel lezárták — ez évente körülbelül 1,8 milliárd euró megtakarítás az államháztartásnak.",
+   "A CO2-ár ettől függetlenül megmarad (2025-től 55 euró/tonna), de általános lakossági kompenzáció már nincs hozzá. Ha 2022, 2023 vagy 2024 valamelyik évében jogosult voltál, de nem kaptad meg az összeget, az utólag 2027 decemberéig még igényelhető a klimabonus.gv.at oldalon, feltéve hogy az adott évben teljesültek a feltételek (legalább 183 nap bejelentett Hauptwohnsitz, valamint jogszerű tartózkodás a nem osztrák állampolgároknak). Részleges utódként 2026-tól az ingázók kapnak célzott kompenzációt — megemelt Pendlereuro és módosított közlekedési adókedvezmény formájában (lásd az ingázási támogatások sztorit).",
+   "Ami tehát eddig „mindenki automatikusan megkapja\" alapon működött, az megszűnt; helyette szűkebb, célzott eszközök jönnek. Hivatalos információ: klimabonus.gv.at, oesterreich.gv.at."
+  ],
+  "sources": [
+   {
+    "label": "klimabonus.gv.at",
+    "url": "https://www.klimabonus.gv.at/"
+   },
+   {
+    "label": "oesterreich.gv.at",
+    "url": "https://www.oesterreich.gv.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ },
+ {
+  "slug": "allaskereses",
+  "old_id": "AU_024",
+  "category": "Munkajog",
+  "icon": "💼",
+  "title": "Álláskeresés Ausztriában — hol és hogyan?",
+  "excerpt": "Az osztrák munkaerőpiacon a három fő álláskereső platform: karriere.at (a legnagyobb osztrák álláskereső portál), LinkedIn (különösen nemzetközi cégeknél",
+  "paragraphs": [
+   "Az osztrák munkaerőpiacon a három fő álláskereső platform: karriere.at (a legnagyobb osztrák álláskereső portál), LinkedIn (különösen nemzetközi cégeknél és IT szektorban), és a Xing (német nyelvterületen népszerű, de csökkenő jelentőségű). Az AMS (Arbeitsmarktservice) az osztrák munkaügyi központ, ahol regisztrálhatsz és állásajánlatokat is kaphatsz. Ausztriában a Bewerbung (jelentkezés) formátumja eltér a magyartól: az önéletrajz (Lebenslauf) általában fényképes és kétoldalas, az Anschreiben (motivációs levél) pedig minden jelentkezésnél személyre szabott.",
+   "A legkeresettebb szektorok: IT és digitalizáció, egészségügy és ápolás, építőipar, vendéglátás és turizmus, és mérnöki szakmák. Az IT szektorban a bérek jóval az osztrák átlag felett vannak (évi 50.000-80.000 EUR bruttó). A fizetési elvárásokat Ausztriában a KV (kollektív szerződés) határozza meg minimumként, és az álláshirdetésekben kötelező feltüntetni a minimálbért.",
+   "A tényleges fizetés általában 10-30%-kal magasabb a KV-miniumnál. Tipp: a Gehaltskompass (gehaltskompass.at) oldalon megnézheted az átlagbéreket pozíció és iparág szerint."
+  ],
+  "sources": [
+   {
+    "label": "karriere.at",
+    "url": "https://www.karriere.at/"
+   },
+   {
+    "label": "ams.at",
+    "url": "https://www.ams.at/"
+   },
+   {
+    "label": "linkedin.com",
+    "url": "https://www.linkedin.com/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "biztositasok",
+  "old_id": "AU_025",
+  "category": "Pénzügyek",
+  "icon": "💶",
+  "title": "Biztosítások Ausztriában — mire van szükséged?",
+  "excerpt": "Ausztriában a kötelező biztosításokon túl (egészségbiztosítás a munkaviszonnyal automatikus, gépjármű felelősségbiztosítás autóhoz) érdemes néhány",
+  "paragraphs": [
+   "Ausztriában a kötelező biztosításokon túl (egészségbiztosítás a munkaviszonnyal automatikus, gépjármű felelősségbiztosítás autóhoz) érdemes néhány opcionálisat is megfontolni. A Haushaltsversicherung (háztartási biztosítás) az egyik legfontosabb: évi 100-200 euróért fedezi a lakásban lévő tárgyaid (lopás, vízkár, tűz) és tartalmaz felelősségbiztosítást (Haftpflichtversicherung) is — ha valakinek kárt okozol. A Rechtsschutzversicherung (jogvédelmi biztosítás) évi 200-400 euró, de ha munkaügyi vitád van vagy bérleti problémád, a jogi költségek enélkül tízezres nagyságrendűek lehetnek.",
+   "Az Unfallversicherung (balesetbiztosítás) fontos, mert a társadalombiztosítás a szabadidős baleseteket csak korlátozottan fedezi — ha pl. síelés közben sérülsz meg, a kórházi költség a társbiztosításból megy, de a tartós rokkantságot nem fedezi. A Lebensversicherung (életbiztosítás) és a magán nyugdíjbiztosítás (private Pensionsvorsorge) inkább hosszú távú befektetés, és az osztrák adórendszerben részben leírható.",
+   "Tipp: a durchblicker.at oldalon összehasonlíthatod az összes biztosítási ajánlatot, és az AK (Arbeiterkammer) is ad ingyenes tanácsot biztosítási kérdésekben."
+  ],
+  "sources": [
+   {
+    "label": "fma.gv.at",
+    "url": "https://www.fma.gv.at/"
+   },
+   {
+    "label": "konsument.at",
+    "url": "https://www.konsument.at/"
+   }
+  ],
+  "verified": null
+ },
+ {
+  "slug": "posta-csomagatvetel",
+  "old_id": "AU_026",
+  "category": "Mindennapi élet",
+  "icon": "🛒",
+  "title": "Posta Ausztriában — csomagátvétel, Postfiliale és a bank99",
+  "excerpt": "Az Österreichische Post a fő postai szolgáltató: levél- és csomagküldés, átvétel és banki ügyek egy helyen. Kétféle postapont van: a klasszikus",
+  "paragraphs": [
+   "Az Österreichische Post a fő postai szolgáltató: levél- és csomagküldés, átvétel és banki ügyek egy helyen. Kétféle postapont van: a klasszikus Postfiliale (önálló postahivatal) és a Post-Partner — ez trafikban, boltban vagy benzinkúton működő postapult, ahol a leggyakoribb ügyeket (csomagfeladás, -átvétel, bélyeg) intézheted, gyakran hosszabb nyitvatartással. Csomagátvétel: ha nem voltál otthon, értesítőt (Benachrichtigung) kapsz, és a küldeményt a megadott átvételi ponton veheted át személyazonosítóval, vagy meghatalmazással más is átveheti; sok helyen Empfangsbox (csomagautomata) is elérhető.",
+   "A Post-app csomagkövetésre és az átvételi preferenciák beállítására való. Költözéskor a Nachsendeauftrag (utánküldési megbízás) gondoskodik róla, hogy a régi címre érkező leveleidet az újra továbbítsák. A Postánál elérhető a bank99 is — a Post saját bankja, amely alapszintű bankszámla- és pénzforgalmi szolgáltatást nyújt a postahelyeken (lásd a bankszámlanyitás sztorit).",
+   "A konkrét levél- és csomagdíjakat publikálás előtt a post.at oldalon érdemes ellenőrizni, mert időről időre változnak."
+  ],
+  "sources": [
+   {
+    "label": "post.at",
+    "url": "https://www.post.at/"
+   },
+   {
+    "label": "bank99.at",
+    "url": "https://www.bank99.at/"
+   }
+  ],
+  "verified": "2026-06-26"
+ }
+]
