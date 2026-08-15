@@ -1,1 +1,52 @@
+name: GEO build (útmutató oldalak + sitemap + llms-full.txt)
 
+# Fut, ha az utmutato-data.json vagy a build script változik.
+# Újragenerálja az utmutato/ mappa oldalait, a sitemap.xml-t és az llms-full.txt-t,
+# valamint frissíti az utmutato.html kártyalinkjeit és statisztikáját.
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'utmutato-data.json'
+      - 'scripts/geo-build.js'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: geo-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate GEO artifacts
+        run: node scripts/geo-build.js
+
+      - name: Show what was generated
+        run: |
+          echo "utmutato/: $(ls -1 utmutato/ | wc -l) oldal"
+          echo "sitemap:   $(grep -c '<loc>' sitemap.xml) URL"
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-regenerate útmutató pages + sitemap + llms-full.txt"
+            git push
+          fi
