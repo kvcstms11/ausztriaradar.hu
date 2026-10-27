@@ -114,6 +114,8 @@
       text-decoration:none;
     }
     .back:hover{ color:rgba(255,255,255,.80); }
+    .table-wrap{ overflow-x:auto; -webkit-overflow-scrolling:touch; margin:10px 0 14px; }
+    .table-wrap table{ margin:0; }
     .foot{ margin:18px 0 0; text-align:center; font-size:13px; color:var(--muted); }
     .foot a{ color:var(--accent); }
   </style>
@@ -148,6 +150,7 @@
       <!-- 2. KEZELT ADATOK -->
       <h2>2. Milyen adatokat kezelünk?</h2>
 
+      <div class="table-wrap">
       <table>
         <tr>
           <th>Adat</th>
@@ -175,6 +178,7 @@
           <td>Hírlevél minőségének javítása, kézbesíthetőség biztosítása</td>
         </tr>
       </table>
+      </div>
 
       <p class="muted">
         A hírlevelet az n8n automatizációs rendszer állítja össze és a Google SMTP infrastruktúráján keresztül küldi ki. A MailerLite kizárólag a feliratkozói lista kezelésére és statisztikák gyűjtésére szolgál, a levélküldésben nem vesz részt. A feliratkozók e-mail címei titkos másolatban (BCC) szerepelnek — a címzettek nem látják egymás adatait.
@@ -191,6 +195,7 @@
 
       <!-- 4. ADATFELDOLGOZÓK -->
       <h2>4. Adatfeldolgozók és harmadik felek</h2>
+      <div class="table-wrap">
       <table>
         <tr>
           <th>Szolgáltató</th>
@@ -238,6 +243,7 @@
           <td>Magyarország (EU)</td>
         </tr>
       </table>
+      </div>
 
       <!-- 5. AI FELDOLGOZÁS -->
       <h2>5. AI-alapú tartalom-előállítás</h2>
