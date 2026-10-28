@@ -7,10 +7,12 @@
  *
  * Outputs (repo root):
  *   - utmutato/<slug>.html  ONE INDEXABLE PAGE PER GUIDE  ← the SEO engine
- *   - utmutato.html         cards + filter chips + stats + Blog JSON-LD refreshed in place
+ *   - utmutato.html         cards (title + excerpt, linking to the guide page) + filter chips
+ *                           + stats + Blog JSON-LD refreshed in place
+ *   - index.html            guide count + featured guide links (AR:HOME-GUIDES markers)
  *   - index.html, utmutato.html, adatkezeles.html
  *                           cookie consent block (AR:CONSENT markers) refreshed in place
- *   - sitemap.xml           static pages + every guide page
+ *   - sitemap.xml           static pages + every guide page (lastmod = "verified" date)
  *   - llms-full.txt         full machine-readable content for AI crawlers
  *
  * Idempotent: safe to run on every push.
@@ -33,6 +35,8 @@ const url = (slug) => `${SITE}/${DIR}/${slug}.html`;
 const OG_IMAGE = `${SITE}/og-image.jpg`;
 const GA_ID = 'G-K2SLJHFKQQ';
 const STATIC_PAGES = ['index.html', 'utmutato.html', 'adatkezeles.html'];
+// A főoldalon kiemelt útmutatók (old_id), ebben a sorrendben
+const FEATURED = ['AU_001', 'AU_002', 'AU_003', 'AU_004', 'AU_006', 'AU_011', 'AU_027', 'AU_028'];
 
 /* Süti-hozzájárulás: a GA4 (gtag.js) csak az "Elfogadom" után töltődik be,
    addig semmilyen Google-kérés nem indul. A döntés localStorage-ban él;
@@ -130,16 +134,32 @@ h1{font-family:'DM Serif Display',Georgia,serif;font-size:34px;line-height:1.2;m
 .pn{display:flex;justify-content:space-between;gap:10px;margin-top:26px;flex-wrap:wrap}
 .pn a{flex:1 1 45%;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14px;text-decoration:none;box-shadow:var(--shadow)}
 .pn a:hover{border-color:var(--teal-dark)}
+.rel{margin-top:26px}
+.rel h2{font-family:'DM Serif Display',Georgia,serif;font-size:22px;font-weight:400;margin:0 0 12px}
+.rel ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rel a{display:block;height:100%;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;font-weight:600;text-decoration:none;box-shadow:var(--shadow)}
+.rel a:hover{border-color:var(--teal-dark)}
+.rel small{display:block;font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:rgba(29,53,87,.55);margin-bottom:3px}
 .cta{margin-top:28px;background:var(--navy);color:var(--cream);border-radius:14px;padding:22px 24px}
 .cta h2{font-family:'DM Serif Display',Georgia,serif;font-size:22px;margin:0 0 8px;font-weight:400;color:var(--white)}
 .cta p{margin:0 0 14px;font-size:15px;color:rgba(241,250,238,.85)}
 .cta a{display:inline-block;background:var(--red);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px}
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:rgba(29,53,87,.62)}
 footer a{color:rgba(29,53,87,.72)}
-@media(max-width:520px){h1{font-size:27px}.wrap{padding:18px 14px 44px}.card{padding:18px}.pn a{flex:1 1 100%}}
+@media(max-width:520px){h1{font-size:27px}.wrap{padding:18px 14px 44px}.card{padding:18px}.pn a{flex:1 1 100%}.rel ul{grid-template-columns:1fr}}
 `.trim();
 
-function guidePage(g, prev, next) {
+/* Kapcsolódó útmutatók: előbb ugyanabból a kategóriából (a JSON sorrendjében, a sajátja után
+   körbeérve), ha kevés, a következő útmutatókkal kiegészítve. */
+function relatedGuides(g, guides, n = 4) {
+  const i = guides.indexOf(g);
+  const ring = [...guides.slice(i + 1), ...guides.slice(0, i)];
+  const same = ring.filter((x) => x.category === g.category);
+  const rest = ring.filter((x) => x.category !== g.category);
+  return [...same, ...rest].slice(0, n);
+}
+
+function guidePage(g, prev, next, related) {
   const desc = shorten(g.excerpt || g.paragraphs[0] || '', 155);
   const u = url(g.slug);
   const ld = {
@@ -221,6 +241,13 @@ ${JSON.stringify(ld, null, 2)}
 ${body}${srcs}${stamp}
   </article>
 
+  <section class="rel" aria-labelledby="rel-h">
+    <h2 id="rel-h">Kapcsolódó útmutatók</h2>
+    <ul>
+${related.map((r) => `      <li><a href="${esc(r.slug)}.html"><small>${esc(r.category)}</small>${esc(r.title)}</a></li>`).join('\n')}
+    </ul>
+  </section>
+
   <div class="pn">
       ${nav}
   </div>
@@ -248,7 +275,7 @@ function buildGuidePages(guides) {
   if (!fs.existsSync(DIR)) fs.mkdirSync(DIR, { recursive: true });
   const wanted = new Set();
   guides.forEach((g, i) => {
-    fs.writeFileSync(path.join(DIR, `${g.slug}.html`), guidePage(g, guides[i - 1] || null, guides[i + 1] || null));
+    fs.writeFileSync(path.join(DIR, `${g.slug}.html`), guidePage(g, guides[i - 1] || null, guides[i + 1] || null, relatedGuides(g, guides)));
     wanted.add(`${g.slug}.html`);
   });
   let removed = 0;
@@ -302,48 +329,34 @@ function buildChips(guides) {
   return chips.join('\n        ');
 }
 
-/* Kártyák az utmutato.html-en, a JSON sorrendjében. */
+/* Kártyák az utmutato.html-en, a JSON sorrendjében. A kártya csak címet és rövid
+   kivonatot mutat, és az önálló útmutató-oldalra visz — a teljes szöveg csak ott
+   szerepel, így nincs duplikált tartalom. A data-search a keresőmezőnek kell. */
 function buildCards(guides) {
   return guides
     .map((g) => {
       const body = g.paragraphs.join(' ');
-      const src = g.sources.length
-        ? `<div class="g-sources"><span class="g-src-label">Hivatalos források</span><div class="g-src-links">${g.sources
-            .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`)
-            .join('')}</div></div>`
-        : '';
-      const stamp = g.verified ? `<span class="g-stamp">✓ Ellenőrizve · ${esc(g.verified)}</span>` : '';
       const search = esc(`${g.title} ${g.category} ${body}`.toLowerCase());
       return `        <article class="g-card" data-cat="${esc(g.category)}" data-search="${search}" id="${esc(g.old_id)}">
-          <button class="g-card-head" aria-expanded="false">
+          <a class="g-card-head" href="/${DIR}/${esc(g.slug)}.html">
             <span class="g-icon" aria-hidden="true">${g.icon}</span>
             <span class="g-card-titles">
               <span class="g-cat">${esc(g.category)}</span>
-              <span class="g-title">${esc(g.title)}</span>
+              <h2 class="g-title">${esc(g.title)}</h2>
               <span class="g-excerpt">${esc(shorten(body, 155))}</span>
             </span>
             <span class="g-chevron" aria-hidden="true">›</span>
-          </button>
-          <div class="g-card-body">
-            <div class="g-body-inner">
-              ${g.paragraphs.map((p) => `<p>${esc(p)}</p>`).join('')}
-              ${src}
-              ${stamp}
-            </div>
-          </div>
+          </a>
         </article>`;
     })
     .join('\n');
 }
 
-/* Make each card on utmutato.html a real, crawlable link to its own page,
-   and refresh the "26 útmutató / 9 téma" stat line. */
+/* utmutato.html: szűrőgombok, kártyák, "28 útmutató / 9 téma" sor és Blog JSON-LD. */
 function patchIndexPage(guides) {
   const p = 'utmutato.html';
   if (!fs.existsSync(p)) return 'utmutato.html not found — skipped';
   let html = fs.readFileSync(p, 'utf8');
-  const bySlugId = new Map(guides.map((g) => [g.old_id, g]));
-
   const region = (start, end, content) => {
     const re = new RegExp(`(${start})[\\s\\S]*?(${end})`);
     if (!re.test(html)) throw new Error(`utmutato.html: hiányzó jelölő: ${start}`);
@@ -351,36 +364,6 @@ function patchIndexPage(guides) {
   };
   region('<!-- AR:CHIPS:START -->', '<!-- AR:CHIPS:END -->', `\n        ${buildChips(guides)}\n        `);
   region('<!-- AR:CARDS:START -->', '<!-- AR:CARDS:END -->', `\n${buildCards(guides)}\n`);
-  let linked = 0;
-
-  // Insert / refresh a permalink inside every card body
-  html = html.replace(/<article class="g-card"([^>]*?)id="([^"]+)"([^>]*)>/g, (m, a, id, b) => m);
-  html = html.replace(
-    /(<article class="g-card"[^>]*id="([^"]+)"[^>]*>)([\s\S]*?)(<\/article>)/g,
-    (m, open, id, inner, close) => {
-      const g = bySlugId.get(id);
-      if (!g) return m;
-      inner = inner.replace(/\s*<a class="g-permalink"[\s\S]*?<\/a>/g, '');
-      const link = `<a class="g-permalink" href="/${DIR}/${g.slug}.html">Önálló oldal megnyitása →</a>`;
-      if (/<div class="g-sources">/.test(inner)) {
-        inner = inner.replace(/(<div class="g-sources">)/, `${link}\n              $1`);
-      } else if (/<span class="g-stamp">/.test(inner)) {
-        inner = inner.replace(/(<span class="g-stamp">)/, `${link}\n              $1`);
-      } else {
-        inner = inner.replace(/(<div class="g-body-inner">)/, `$1\n              ${link}`);
-      }
-      linked++;
-      return open + inner + close;
-    }
-  );
-
-  if (!/\.g-permalink\{/.test(html)) {
-    html = html.replace(
-      /<\/style>/,
-      `  .g-permalink{display:inline-block;margin:4px 0 10px;font-size:14px;font-weight:600;color:var(--teal-dark);text-decoration:none}\n    .g-permalink:hover{text-decoration:underline}\n  </style>`
-    );
-  }
-
   const cats = new Set(guides.map((g) => g.category)).size;
   html = html.replace(
     /<!-- AR:STATS:START -->[\s\S]*?<!-- AR:STATS:END -->/,
@@ -397,7 +380,26 @@ function patchIndexPage(guides) {
   else html = html.replace('</head>', ldBlock + '\n</head>');
 
   fs.writeFileSync(p, html);
-  return `${linked} kártya linkelve, Blog JSON-LD: ${guides.length} cikk`;
+  return `${guides.length} kártya, Blog JSON-LD: ${guides.length} cikk`;
+}
+
+/* Főoldal: az útmutatók száma és a kiemelt útmutatók linkjei (AR:HOME-GUIDES jelölők között). */
+function patchHomePage(guides) {
+  const p = 'index.html';
+  let html = fs.readFileSync(p, 'utf8');
+  const re = /(<!-- AR:HOME-GUIDES:START[^>]*-->)[\s\S]*?(<!-- AR:HOME-GUIDES:END -->)/;
+  if (!re.test(html)) throw new Error('index.html: hiányzó AR:HOME-GUIDES jelölő');
+  const byId = new Map(guides.map((g) => [g.old_id, g]));
+  const featured = FEATURED.map((id) => byId.get(id)).filter(Boolean);
+  const block = `
+      <p class="guide-sub">${guides.length} lépésről lépésre útmutató az ausztriai élethez — magyarul, hivatalos forrásokkal. Népszerű témák:</p>
+      <div class="guide-cats">
+${featured.map((g) => `        <a href="/${DIR}/${esc(g.slug)}.html">${g.icon} ${esc(g.title.split(/ [—–-] /)[0])}</a>`).join('\n')}
+      </div>
+      `;
+  html = html.replace(re, (m, a, b) => a + block + b);
+  fs.writeFileSync(p, html);
+  return featured.length;
 }
 
 /* A süti-hozzájárulás blokkját a kézzel szerkesztett oldalakba is beírja (idempotens). */
@@ -417,19 +419,22 @@ function injectConsent() {
 }
 
 function buildSitemap(guides) {
-  const today = new Date().toISOString().slice(0, 10);
+  // lastmod csak valódi tartalmi dátumból: az útmutatók "verified" mezőjéből.
+  // Ahol nincs dátum, ott kimarad — a build napja félrevezető jel lenne a Google-nek.
+  const dates = guides.map((g) => g.verified).filter(Boolean).sort();
+  const newest = dates[dates.length - 1] || null;
   const urls = [
     { loc: `${SITE}/`, freq: 'daily', pri: '1.0' },
-    { loc: `${SITE}/utmutato.html`, freq: 'weekly', pri: '0.9' },
+    { loc: `${SITE}/utmutato.html`, freq: 'weekly', pri: '0.9', mod: newest },
     { loc: `${SITE}/adatkezeles.html`, freq: 'yearly', pri: '0.2' },
-    ...guides.map((g) => ({ loc: url(g.slug), freq: 'monthly', pri: '0.7' })),
+    ...guides.map((g) => ({ loc: url(g.slug), freq: 'monthly', pri: '0.7', mod: g.verified || null })),
   ];
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     urls
       .map(
         (u) =>
-          `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`
+          `  <url>\n    <loc>${u.loc}</loc>\n${u.mod ? `    <lastmod>${u.mod}</lastmod>\n` : ''}    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`
       )
       .join('\n') +
     `\n</urlset>\n`;
@@ -465,11 +470,13 @@ function main() {
   const guides = JSON.parse(fs.readFileSync('utmutato-data.json', 'utf8'));
   const pages = buildGuidePages(guides);
   const patched = patchIndexPage(guides);
+  const home = patchHomePage(guides);
   const consent = injectConsent();
   const sm = buildSitemap(guides);
   const llms = buildLlmsFull(guides);
   console.log(`${DIR}/: ${pages.written} guide pages written, ${pages.removed} stale removed`);
   console.log(`utmutato.html: ${patched}`);
+  console.log(`index.html: ${home} kiemelt útmutató`);
   console.log(`cookie consent: ${pages.written} útmutató + ${consent} statikus oldal`);
   console.log(`sitemap.xml: ${sm} URLs`);
   console.log(`llms-full.txt: ${llms} bytes`);
