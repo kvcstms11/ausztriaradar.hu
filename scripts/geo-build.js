@@ -7,7 +7,7 @@
  *
  * Outputs (repo root):
  *   - utmutato/<slug>.html  ONE INDEXABLE PAGE PER GUIDE  ← the SEO engine
- *   - utmutato.html         card links + stats + Blog JSON-LD refreshed in place
+ *   - utmutato.html         cards + filter chips + stats + Blog JSON-LD refreshed in place
  *   - index.html, utmutato.html, adatkezeles.html
  *                           cookie consent block (AR:CONSENT markers) refreshed in place
  *   - sitemap.xml           static pages + every guide page
@@ -282,6 +282,60 @@ function blogLD(guides) {
   };
 }
 
+/* Szűrőgombok: kategóriák darabszám szerint csökkenő, azonos számnál ABC-sorrendben.
+   8 gomb után sortörés (mobilon CSS rejti). */
+function buildChips(guides) {
+  const counts = {};
+  const icons = {};
+  for (const g of guides) {
+    counts[g.category] = (counts[g.category] || 0) + 1;
+    if (!icons[g.category]) icons[g.category] = g.icon;
+  }
+  const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b, 'hu'));
+  const chips = [
+    `<button class="g-chip is-active" data-filter="all">Mind <span class="g-chip-n">${guides.length}</span></button>`,
+    ...cats.map(
+      (c) => `<button class="g-chip" data-filter="${esc(c)}">${icons[c] || ''} ${esc(c)} <span class="g-chip-n">${counts[c]}</span></button>`
+    ),
+  ];
+  if (chips.length > 8) chips.splice(8, 0, '<i class="chip-break" aria-hidden="true"></i>');
+  return chips.join('\n        ');
+}
+
+/* Kártyák az utmutato.html-en, a JSON sorrendjében. */
+function buildCards(guides) {
+  return guides
+    .map((g) => {
+      const body = g.paragraphs.join(' ');
+      const src = g.sources.length
+        ? `<div class="g-sources"><span class="g-src-label">Hivatalos források</span><div class="g-src-links">${g.sources
+            .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`)
+            .join('')}</div></div>`
+        : '';
+      const stamp = g.verified ? `<span class="g-stamp">✓ Ellenőrizve · ${esc(g.verified)}</span>` : '';
+      const search = esc(`${g.title} ${g.category} ${body}`.toLowerCase());
+      return `        <article class="g-card" data-cat="${esc(g.category)}" data-search="${search}" id="${esc(g.old_id)}">
+          <button class="g-card-head" aria-expanded="false">
+            <span class="g-icon" aria-hidden="true">${g.icon}</span>
+            <span class="g-card-titles">
+              <span class="g-cat">${esc(g.category)}</span>
+              <span class="g-title">${esc(g.title)}</span>
+              <span class="g-excerpt">${esc(shorten(body, 155))}</span>
+            </span>
+            <span class="g-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="g-card-body">
+            <div class="g-body-inner">
+              ${g.paragraphs.map((p) => `<p>${esc(p)}</p>`).join('')}
+              ${src}
+              ${stamp}
+            </div>
+          </div>
+        </article>`;
+    })
+    .join('\n');
+}
+
 /* Make each card on utmutato.html a real, crawlable link to its own page,
    and refresh the "26 útmutató / 9 téma" stat line. */
 function patchIndexPage(guides) {
@@ -289,6 +343,14 @@ function patchIndexPage(guides) {
   if (!fs.existsSync(p)) return 'utmutato.html not found — skipped';
   let html = fs.readFileSync(p, 'utf8');
   const bySlugId = new Map(guides.map((g) => [g.old_id, g]));
+
+  const region = (start, end, content) => {
+    const re = new RegExp(`(${start})[\\s\\S]*?(${end})`);
+    if (!re.test(html)) throw new Error(`utmutato.html: hiányzó jelölő: ${start}`);
+    html = html.replace(re, (m, a, b) => a + content + b);
+  };
+  region('<!-- AR:CHIPS:START -->', '<!-- AR:CHIPS:END -->', `\n        ${buildChips(guides)}\n        `);
+  region('<!-- AR:CARDS:START -->', '<!-- AR:CARDS:END -->', `\n${buildCards(guides)}\n`);
   let linked = 0;
 
   // Insert / refresh a permalink inside every card body

@@ -52,6 +52,32 @@ Tipp: az ÖAMTC és az ARBÖ az osztrák autósklub-ok (mint az ADAC Németorsz�
 
 Hivatalos források: oeamtc.at (https://www.oeamtc.at/) · asfinag.at (https://www.asfinag.at/)
 
+## Téligumi-szabály Ausztriában — november 1-jétől április 15-ig
+Hivatkozás: https://ausztriaradar.hu/utmutato/teli-gumi-szabaly.html
+Ellenőrizve: 2026-10-28
+
+Ausztriában november 1. és április 15. között helyzetfüggő téli felszerelési kötelezettség (situative Winterausrüstungspflicht) van érvényben. Ez azt jelenti: személyautóval, 3,5 tonnáig terjedő kisteherautóval és zárt kabinos mopedautóval ebben az időszakban havas, latyakos vagy jeges úton csak téli gumival szabad közlekedni. Száraz, tiszta úton a szabály szerint még nyári gumival is mehetsz — de ha útközben leesik a hó, már szabálysértő vagy, ezért a gyakorlatban érdemes november elejére átszerelni.
+Téli gumi az, amelyen M+S (M.S., M&S) jelölés vagy hópehely-szimbólum van. A minimális profilmélység radiálgumin 4 mm, diagonálgumin 5 mm — és ennek az egész tél folyamán teljesülnie kell. Az ÖAMTC ezért cserekor kb. 6 mm-t javasol, és nagyjából hat szezon után akkor is cserét, ha a profil még elég. A négyévszakos gumi megfelel, ha M+S vagy hópehely-jelölése van.
+Teljesen havas úton hólánc is használható; hólánc csak hóval borított úton megengedett. Tüskés gumi (Spikes) október 1. és május 31. között használható, 3,5 tonnáig. A 3,5 tonna feletti teherautóknak november 1. és április 15. között időjárástól függetlenül kötelező a téli gumi és a hólánc magukkal vitele, buszoknak március 15-ig.
+Büntetés: szabálytalan gumiért kb. 100 eurótól indul a bírság; ha másokat is veszélyeztetsz, akár 5000 euró is lehet. Baleset esetén a biztosító részben vagy egészben megtagadhatja a fizetést, ha nem volt téli felszerelésed — akkor is, ha nem te okoztad a balesetet.
+A szabály minden járműre vonatkozik Ausztriában, rendszámtól függetlenül — a magyar rendszámú autókra is. Ingázóknak fontos: Magyarországon nincs általános téligumi-kötelezettség, de Ausztriába átlépve már az osztrák szabály számít. Ha télen Szlovéniába vagy Olaszországba mész: Szlovéniában november 15. és március 15. között kötelező a téli felszerelés, a Brenner-autópályán (A22) Olaszországban november 15. és április 15. között időjárástól függetlenül.
+Tipp: hidegbetörésnél a gumiszervizek gyorsan betelnek, ezért időpontot érdemes előre foglalni.
+
+Hivatalos források: oeamtc.at (https://www.oeamtc.at/) · oesterreich.gv.at (https://www.oesterreich.gv.at/) · land-oberoesterreich.gv.at (https://www.land-oberoesterreich.gv.at/)
+
+## Extra útdíjas alagutak és szakaszok — ahol a matrica nem elég
+Hivatkozás: https://ausztriaradar.hu/utmutato/streckenmaut-alagutak.html
+Ellenőrizve: 2026-10-28
+
+Az osztrák autópályákon a matrica (Vignette) a legtöbb szakaszra elég, de öt alpesi szakaszon külön útdíjat (Streckenmaut) kell fizetned 3,5 tonnáig. Ezeken a szakaszokon matrica nem kell, csak a Streckenmaut.
+2026-os árak személyautóra, egyszeri áthajtásra: A9 Pyhrn-autópálya — Bosruck-alagút (Spital am Pyhrn – Ardning) 7,00 euró, Gleinalm-alagút (St. Michael – Übelbach) 12,00 euró, a kettő együtt 19,00 euró. A10 Tauern-autópálya — Tauern- és Katschberg-alagút (Flachau – Rennweg) 15,00 euró. A11 Karavankák-autópálya — Karavankák-alagút Szlovénia felé 9,00 euró. A13 Brenner-autópálya (Innsbruck – Brenner) 12,50 euró. S16 Arlberg-gyorsforgalmi út — Arlberg-alagút (St. Anton – Langen) 13,00 euró. Grazból ez különösen érinti azokat, akik a Gleinalm-alagúton át mennek Linz vagy Salzburg felé, illetve a Tauernen át Karintiába.
+Fizetés: a fizetőkapunál készpénzzel, bankkártyával vagy tankkártyával, vagy előre online az ASFINAG Mautshopban és az ASFINAG appban (digitális Streckenmaut). Az előre megvett digitális jeggyel a kijelölt sávon megállás nélkül hajthatsz át, a kamera a rendszámot olvassa le. Az egyszeri jegy a kiállítástól egy évig használható. Rendszeres áthaladáshoz többutas és éves kártya is van — kivéve a Karavankák-alagutat, ahol éves kártya nincs. A Digitale Streckenmaut FLEX ingyenes szolgáltatással utólagos, automatikus elszámolás is kérhető.
+Figyelj: a fizetőkapuk jobb szélső „GO” sávja az A10, A11 és S16 szakaszon 3,5 tonnáig tilos (azt a teherautók használják); kivétel a Brenner-fizetőkapu.
+Matricákról röviden: 2026-ban az éves matrica 106,80 euró, a 2 hónapos 32,00, a 10 napos 12,80, az 1 napos 9,60 euró. 2027-től a matrica csak digitális lesz, az éves ára január 1-jétől 108,90 euróra emelkedik — de ha december 31-ig megveszed a 2027-es éves matricát, még a régi, 106,80 eurós áron kapod. Ha online veszed az éves vagy 2 hónapos digitális matricát magánszemélyként, az csak a vásárlás után 18 nappal lesz érvényes; benzinkúton, trafikban vagy automatánál vásárolva azonnal érvényes.
+A digitális matrica a rendszámhoz és az országhoz kötött — egy elütött karakter is pótdíjat jelenthet. Érvényes matrica nélkül 2026 óta 200 euró pótdíj (Ersatzmaut) jár. A 2027-es pontos árakat vásárlás előtt az asfinag.at oldalon ellenőrizd.
+
+Hivatalos források: asfinag.at (https://www.asfinag.at/) · oesterreich.gv.at (https://www.oesterreich.gv.at/)
+
 # Lakhatás
 
 
