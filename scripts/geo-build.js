@@ -3,7 +3,10 @@
  * GEO build — ausztriaradar.hu
  *
  * Input (repo root):
- *   - utmutato-data.json   [{ slug, category, icon, title, excerpt, paragraphs[], sources[], verified }]
+ *   - utmutato-data.json   [{ slug, old_id, category, icon, title, seo_title, excerpt,
+ *                              paragraphs[], sources[], verified }]
+ *     paragraphs: szöveg vagy { h: "Alcím" } (h2). A szövegben [felirat](slug) belső link
+ *     egy másik útmutatóra.
  *
  * Outputs (repo root):
  *   - utmutato/<slug>.html  ONE INDEXABLE PAGE PER GUIDE  ← the SEO engine
@@ -33,6 +36,14 @@ const shorten = (t, n) => {
 };
 const url = (slug) => `${SITE}/${DIR}/${slug}.html`;
 const OG_IMAGE = `${SITE}/og-image.jpg`;
+
+// [felirat](slug) belső linkek a bekezdésekben
+const LINK_RE = /\[([^\]]+)\]\(([a-z0-9-]+)\)/g;
+const stripLinks = (t) => String(t).replace(LINK_RE, '$1');
+const isHeading = (p) => p && typeof p === 'object' && p.h;
+// Csak a bekezdések szövege, linkek nélkül (kivonathoz, kereséshez, JSON-LD-hez)
+const textParas = (g) => g.paragraphs.filter((p) => !isHeading(p)).map(stripLinks);
+const plainText = (g) => textParas(g).join(' ');
 const GA_ID = 'G-K2SLJHFKQQ';
 const STATIC_PAGES = ['index.html', 'utmutato.html', 'adatkezeles.html'];
 // A főoldalon kiemelt útmutatók (old_id), ebben a sorrendben
@@ -127,6 +138,9 @@ h1{font-family:'DM Serif Display',Georgia,serif;font-size:34px;line-height:1.2;m
 .card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow)}
 .card p{margin:0 0 15px;font-size:16.5px}
 .card p:last-child{margin-bottom:0}
+.card h2{font-family:'DM Serif Display',Georgia,serif;font-size:22px;line-height:1.25;font-weight:400;margin:24px 0 8px}
+.card h2:first-child{margin-top:0}
+.card p a{color:var(--teal-dark);font-weight:600}
 .sources{margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}
 .sources b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:rgba(29,53,87,.6);margin-bottom:8px}
 .sources a{display:inline-block;margin:0 10px 6px 0;font-size:14px}
@@ -160,7 +174,7 @@ function relatedGuides(g, guides, n = 4) {
 }
 
 function guidePage(g, prev, next, related) {
-  const desc = shorten(g.excerpt || g.paragraphs[0] || '', 155);
+  const desc = shorten(g.excerpt || plainText(g), 155);
   const u = url(g.slug);
   const ld = {
     '@context': 'https://schema.org',
@@ -168,7 +182,7 @@ function guidePage(g, prev, next, related) {
       {
         '@type': 'Article',
         headline: g.title,
-        description: shorten(g.excerpt || g.paragraphs[0] || '', 300),
+        description: shorten(g.excerpt || plainText(g), 300),
         articleSection: g.category,
         url: u,
         inLanguage: 'hu',
@@ -187,7 +201,13 @@ function guidePage(g, prev, next, related) {
     ],
   };
 
-  const body = g.paragraphs.map((p) => `        <p>${esc(p)}</p>`).join('\n');
+  const body = g.paragraphs
+    .map((p) =>
+      isHeading(p)
+        ? `        <h2>${esc(p.h)}</h2>`
+        : `        <p>${esc(p).replace(LINK_RE, (m, label, slug) => `<a href="${slug}.html">${label}</a>`)}</p>`
+    )
+    .join('\n');
   const srcs = g.sources.length
     ? `\n        <div class="sources"><b>Hivatalos források</b>\n${g.sources
         .map((s) => `          <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`)
@@ -205,7 +225,7 @@ function guidePage(g, prev, next, related) {
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>${esc(g.title)} | Ausztria Útmutató</title>
+<title>${esc(g.seo_title || `${g.title} | Ausztria Radar`)}</title>
 <meta name="description" content="${esc(desc)}" />
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
 <link rel="canonical" href="${u}" />
@@ -300,7 +320,7 @@ function blogLD(guides) {
       headline: g.title,
       articleSection: g.category,
       url: url(g.slug),
-      description: shorten(g.paragraphs.join(' ') || g.excerpt || '', 200),
+      description: shorten(g.excerpt || plainText(g), 200),
       inLanguage: 'hu',
       ...(g.verified ? { dateModified: g.verified } : {}),
       isPartOf: { '@type': 'Blog', name: 'Ausztria Útmutató', url: `${SITE}/utmutato.html` },
@@ -335,7 +355,7 @@ function buildChips(guides) {
 function buildCards(guides) {
   return guides
     .map((g) => {
-      const body = g.paragraphs.join(' ');
+      const body = plainText(g);
       const search = esc(`${g.title} ${g.category} ${body}`.toLowerCase());
       return `        <article class="g-card" data-cat="${esc(g.category)}" data-search="${search}" id="${esc(g.old_id)}">
           <a class="g-card-head" href="/${DIR}/${esc(g.slug)}.html">
@@ -343,7 +363,7 @@ function buildCards(guides) {
             <span class="g-card-titles">
               <span class="g-cat">${esc(g.category)}</span>
               <h2 class="g-title">${esc(g.title)}</h2>
-              <span class="g-excerpt">${esc(shorten(body, 155))}</span>
+              <span class="g-excerpt">${esc(shorten(g.excerpt || body, 155))}</span>
             </span>
             <span class="g-chevron" aria-hidden="true">›</span>
           </a>
@@ -457,7 +477,7 @@ function buildLlmsFull(guides) {
       out.push(`Hivatkozás: ${url(g.slug)}`);
       if (g.verified) out.push(`Ellenőrizve: ${g.verified}`);
       out.push('');
-      g.paragraphs.forEach((p) => out.push(p));
+      g.paragraphs.forEach((p) => out.push(isHeading(p) ? `\n### ${p.h}` : stripLinks(p)));
       if (g.sources.length) out.push(`\nHivatalos források: ${g.sources.map((s) => `${s.label} (${s.url})`).join(' · ')}`);
     }
   }
