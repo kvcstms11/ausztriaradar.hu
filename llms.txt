@@ -49,7 +49,7 @@ Témák:
 Minden útmutató teljes szövege egy fájlban: https://ausztriaradar.hu/llms-full.txt
 
 ## Hírlevél
-Napi ausztriai hírlevél magyarul, 1 hónap ingyen: https://ausztriaradar.hu/
+Napi ausztriai hírlevél magyarul, ingyenes: https://ausztriaradar.hu/
 
 ## Fontos
 A tartalmak tájékoztató jellegűek, hivatalos forrásokkal. Kapcsolat: info@ausztriaradar.hu
